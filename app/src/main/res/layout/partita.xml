@@ -11,126 +11,183 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="26dp"
         android:text="Giocatore 1 ->"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="26dp" />
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="21dp"
         android:text="Giocatore 2 ->"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="99dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="52dp"
-        android:layout_height="55dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:layout_marginTop="26dp"
         android:background="@drawable/x"
-        tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="26dp" />
+        app:layout_constraintEnd_toStartOf="@+id/textView9"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="52dp"
-        android:layout_height="55dp"
-        android:background="@drawable/cerchio"
-        tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="99dp" />
-
-    <ImageView
-        android:id="@+id/imageView4"
         android:layout_width="wrap_content"
-        android:layout_height="329dp"
-        app:srcCompat="@drawable/griglia"
-        tools:layout_editor_absoluteY="167dp" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/cerchio"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="92dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="26dp"
         android:text="E' il turno di:"
-        tools:layout_editor_absoluteX="266dp"
-        tools:layout_editor_absoluteY="62dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView10"
-        android:layout_width="92dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="266dp"
-        tools:layout_editor_absoluteY="100dp" />
+        android:layout_marginTop="17dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" /><![CDATA[
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="92dp"
-        android:layout_height="84dp"
-        android:background="@drawable/cerchio"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="184dp" />
 
-    <ImageButton
-        android:id="@+id/imageButton1"
-        android:layout_width="92dp"
-        android:layout_height="84dp"
-        android:background="@drawable/cerchio"
-        tools:layout_editor_absoluteX="145dp"
-        tools:layout_editor_absoluteY="184dp" />/>
 
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="92dp"
-        android:layout_height="84dp"
-        android:background="@drawable/cerchio"
-        tools:layout_editor_absoluteX="260dp"
-        tools:layout_editor_absoluteY="184dp" />
+    />
 
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="92dp"
-        android:layout_height="84dp"
-        android:background="@drawable/cerchio"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="289dp" />
 
-    <ImageButton
-        android:id="@+id/imageButton5"
-        android:layout_width="92dp"
-        android:layout_height="84dp"
-        android:background="@drawable/cerchio"
-        tools:layout_editor_absoluteX="145dp"
-        tools:layout_editor_absoluteY="289dp" />
 
-    <ImageButton
-        android:id="@+id/imageButton6"
-        android:layout_width="92dp"
-        android:layout_height="84dp"
-        android:background="@drawable/cerchio"
-        tools:layout_editor_absoluteX="260dp"
-        tools:layout_editor_absoluteY="289dp" />
 
-    <ImageButton
-        android:id="@+id/imageButton7"
-        android:layout_width="92dp"
-        android:layout_height="84dp"
-        android:background="@drawable/cerchio"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="399dp" />
 
-    <ImageButton
-        android:id="@+id/imageButton8"
-        android:layout_width="92dp"
-        android:layout_height="84dp"
-        android:background="@drawable/cerchio"
-        tools:layout_editor_absoluteX="145dp"
-        tools:layout_editor_absoluteY="399dp" />
 
-    <ImageButton
-        android:id="@+id/imageButton9"
-        android:layout_width="92dp"
-        android:layout_height="84dp"
-        android:background="@drawable/cerchio"
-        tools:layout_editor_absoluteX="260dp"
-        tools:layout_editor_absoluteY="399dp" />
+
+
+
+    ]]>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+        <GridLayout
+            android:id="@+id/gridLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="29dp"
+            android:layout_marginTop="29dp"
+            android:background="@drawable/border"
+            android:columnCount="3"
+            android:defaultFocusHighlightEnabled="false"
+            android:rowCount="3"
+            android:useDefaultMargins="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.52">
+
+            <Button
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cerchio"
+                android:cropToPadding="false"
+                android:defaultFocusHighlightEnabled="false"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="26dp" />
+
+            <Button
+                android:id="@+id/imageButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cerchio"
+                tools:layout_editor_absoluteX="138dp"
+                tools:layout_editor_absoluteY="26dp" />
+
+            <Button
+                android:id="@+id/imageButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cerchio"
+                tools:layout_editor_absoluteX="250dp"
+                tools:layout_editor_absoluteY="26dp" />
+
+            <Button
+                android:id="@+id/imageButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cerchio"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="132dp" />
+
+            <Button
+                android:id="@+id/imageButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cerchio"
+                tools:layout_editor_absoluteX="138dp"
+                tools:layout_editor_absoluteY="132dp" />
+
+            <Button
+                android:id="@+id/imageButton5"
+                android:layout_width="92dp"
+                android:layout_height="84dp"
+                android:background="@drawable/cerchio"
+                tools:layout_editor_absoluteX="250dp"
+                tools:layout_editor_absoluteY="132dp" />
+
+            <Button
+                android:id="@+id/imageButton6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cerchio"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="238dp" />
+
+            <Button
+                android:id="@+id/imageButton7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cerchio"
+                tools:layout_editor_absoluteX="138dp"
+                tools:layout_editor_absoluteY="238dp" />
+
+            <Button
+                android:id="@+id/imageButton8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cerchio"
+                tools:layout_editor_absoluteX="250dp"
+                tools:layout_editor_absoluteY="238dp" />
+
+        </GridLayout>
+    </android.support.constraint.ConstraintLayout>
 
 </android.support.constraint.ConstraintLayout>

@@ -16,10 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="AvversarioPersona" />
-        <activity
-            android:name=".Partita" />
+        <activity android:name=".AvversarioPersona" />
+        <activity android:name=".Partita" />
     </application>
 
 </manifest>
