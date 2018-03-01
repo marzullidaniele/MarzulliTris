@@ -22,8 +22,10 @@ public class AvversarioPersona extends AppCompatActivity {
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(!g1.getText().equals("") && !g2.getText().equals("")){
+                if(g1.getText().length()!=0 && g2.length()!=0){
                     Intent i = new Intent(AvversarioPersona.this, Partita.class);
+                    i.putExtra("n1",g1.getText().toString());
+                    i.putExtra("n2",g2.getText().toString());
                     startActivity(i);
                 }
                 else{
