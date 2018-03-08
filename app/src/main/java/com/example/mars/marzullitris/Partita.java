@@ -30,7 +30,7 @@ public class Partita  extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //b1.setBackground();
+                b1.setBackground(getDrawable(R.drawable.x));
             }
         });
     }

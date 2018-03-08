@@ -117,7 +117,7 @@
                 android:id="@+id/imageButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/cerchio"
+                android:background="@drawable/bianco"
                 android:cropToPadding="false"
                 android:defaultFocusHighlightEnabled="false"
                 tools:layout_editor_absoluteX="25dp"
@@ -127,7 +127,7 @@
                 android:id="@+id/imageButton1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/cerchio"
+                android:background="@drawable/bianco"
                 tools:layout_editor_absoluteX="138dp"
                 tools:layout_editor_absoluteY="26dp" />
 
@@ -135,7 +135,7 @@
                 android:id="@+id/imageButton2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/cerchio"
+                android:background="@drawable/bianco"
                 tools:layout_editor_absoluteX="250dp"
                 tools:layout_editor_absoluteY="26dp" />
 
@@ -143,7 +143,7 @@
                 android:id="@+id/imageButton3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/cerchio"
+                android:background="@drawable/bianco"
                 tools:layout_editor_absoluteX="25dp"
                 tools:layout_editor_absoluteY="132dp" />
 
@@ -151,7 +151,7 @@
                 android:id="@+id/imageButton4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/cerchio"
+                android:background="@drawable/bianco"
                 tools:layout_editor_absoluteX="138dp"
                 tools:layout_editor_absoluteY="132dp" />
 
@@ -159,7 +159,7 @@
                 android:id="@+id/imageButton5"
                 android:layout_width="92dp"
                 android:layout_height="84dp"
-                android:background="@drawable/cerchio"
+                android:background="@drawable/bianco"
                 tools:layout_editor_absoluteX="250dp"
                 tools:layout_editor_absoluteY="132dp" />
 
@@ -167,7 +167,7 @@
                 android:id="@+id/imageButton6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/cerchio"
+                android:background="@drawable/bianco"
                 tools:layout_editor_absoluteX="25dp"
                 tools:layout_editor_absoluteY="238dp" />
 
@@ -175,7 +175,7 @@
                 android:id="@+id/imageButton7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/cerchio"
+                android:background="@drawable/bianco"
                 tools:layout_editor_absoluteX="138dp"
                 tools:layout_editor_absoluteY="238dp" />
 
@@ -183,7 +183,7 @@
                 android:id="@+id/imageButton8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/cerchio"
+                android:background="@drawable/bianco"
                 tools:layout_editor_absoluteX="250dp"
                 tools:layout_editor_absoluteY="238dp" />
 
