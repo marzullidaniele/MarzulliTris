@@ -8,6 +8,9 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.Collections;
+
 public class Partita  extends AppCompatActivity {
     TextView tv1;
     TextView tv2;
@@ -24,6 +27,8 @@ public class Partita  extends AppCompatActivity {
     int conta=0;
     String n1;
     String n2;
+    ArrayList giocate1=new ArrayList();
+    ArrayList giocate2=new ArrayList();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,11 +58,17 @@ public class Partita  extends AppCompatActivity {
                     b1.setBackground(getDrawable(R.drawable.x));
                     b1.setClickable(false);
                     tv3.setText(n2);
+                    giocate1.add(1);
+                    Collections.sort(giocate1);
+                    for(int i=0;i<giocate1.size();i++){
+
+                    }
                     conta++;
                 } else {
                     b1.setBackground(getDrawable(R.drawable.cerchio));
                     b1.setClickable(false);
                     tv3.setText(n1);
+                    giocate2.add(1);
                     conta++;
                 }
             }
@@ -69,11 +80,13 @@ public class Partita  extends AppCompatActivity {
                     b2.setBackground(getDrawable(R.drawable.x));
                     b2.setClickable(false);
                     tv3.setText(n2);
+                    giocate1.add(2);
                     conta++;
                 } else {
                     b2.setBackground(getDrawable(R.drawable.cerchio));
                     b2.setClickable(false);
                     tv3.setText(n1);
+                    giocate2.add(2);
                     conta++;
                 }
             }
@@ -85,11 +98,13 @@ public class Partita  extends AppCompatActivity {
                     b3.setBackground(getDrawable(R.drawable.x));
                     b3.setClickable(false);
                     tv3.setText(n2);
+                    giocate1.add(3);
                     conta++;
                 } else {
                     b3.setBackground(getDrawable(R.drawable.cerchio));
                     b3.setClickable(false);
                     tv3.setText(n1);
+                    giocate2.add(3);
                     conta++;
                 }
             }
@@ -101,11 +116,13 @@ public class Partita  extends AppCompatActivity {
                     b4.setBackground(getDrawable(R.drawable.x));
                     b4.setClickable(false);
                     tv3.setText(n2);
+                    giocate1.add(4);
                     conta++;
                 } else {
                     b4.setBackground(getDrawable(R.drawable.cerchio));
                     b4.setClickable(false);
                     tv3.setText(n1);
+                    giocate2.add(4);
                     conta++;
                 }
             }
@@ -117,11 +134,13 @@ public class Partita  extends AppCompatActivity {
                     b5.setBackground(getDrawable(R.drawable.x));
                     b5.setClickable(false);
                     tv3.setText(n2);
+                    giocate1.add(5);
                     conta++;
                 } else {
                     b5.setBackground(getDrawable(R.drawable.cerchio));
                     b5.setClickable(false);
                     tv3.setText(n1);
+                    giocate2.add(5);
                     conta++;
                 }
             }
@@ -133,11 +152,13 @@ public class Partita  extends AppCompatActivity {
                     b6.setBackground(getDrawable(R.drawable.x));
                     b6.setClickable(false);
                     tv3.setText(n2);
+                    giocate1.add(6);
                     conta++;
                 } else {
                     b6.setBackground(getDrawable(R.drawable.cerchio));
                     b6.setClickable(false);
                     tv3.setText(n1);
+                    giocate2.add(6);
                     conta++;
                 }
             }
@@ -149,11 +170,13 @@ public class Partita  extends AppCompatActivity {
                     b7.setBackground(getDrawable(R.drawable.x));
                     b7.setClickable(false);
                     tv3.setText(n2);
+                    giocate1.add(7);
                     conta++;
                 } else {
                     b7.setBackground(getDrawable(R.drawable.cerchio));
                     b7.setClickable(false);
                     tv3.setText(n1);
+                    giocate2.add(7);
                     conta++;
                 }
             }
@@ -165,11 +188,13 @@ public class Partita  extends AppCompatActivity {
                     b8.setBackground(getDrawable(R.drawable.x));
                     b8.setClickable(false);
                     tv3.setText(n2);
+                    giocate1.add(8);
                     conta++;
                 } else {
                     b8.setBackground(getDrawable(R.drawable.cerchio));
                     b8.setClickable(false);
                     tv3.setText(n1);
+                    giocate2.add(8);
                     conta++;
                 }
             }
@@ -181,11 +206,13 @@ public class Partita  extends AppCompatActivity {
                     b9.setBackground(getDrawable(R.drawable.x));
                     b9.setClickable(false);
                     tv3.setText(n2);
+                    giocate1.add(9);
                     conta++;
                 } else {
                     b9.setBackground(getDrawable(R.drawable.cerchio));
                     b9.setClickable(false);
                     tv3.setText(n1);
+                    giocate2.add(9);
                     conta++;
                 }
             }
