@@ -1,12 +1,16 @@
 package com.example.mars.marzullitris;
 
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -60,8 +64,75 @@ public class Partita  extends AppCompatActivity {
                     tv3.setText(n2);
                     giocate1.add(1);
                     Collections.sort(giocate1);
-                    for(int i=0;i<giocate1.size();i++){
+                    int y=0;
+                    while (y<giocate1.size()){
+                        if(giocate1.get(y).equals(2)){
+                            int k=y+1;
+                            while (k<giocate1.size()){
+                                if(giocate1.get(k).equals(3)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
 
+                                    builder.setMessage(n1 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        if(giocate1.get(y).equals(4)){
+                            int k=y+1;
+                            while (k<giocate1.size()){
+                                if(giocate1.get(k).equals(7)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n1 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        if(giocate1.get(y).equals(5)){
+                            int k=y+1;
+                            while (k<giocate1.size()){
+                                if(giocate1.get(k).equals(9)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n1 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        y++;
                     }
                     conta++;
                 } else {
@@ -69,6 +140,77 @@ public class Partita  extends AppCompatActivity {
                     b1.setClickable(false);
                     tv3.setText(n1);
                     giocate2.add(1);
+                    Collections.sort(giocate1);
+                    int y=0;
+                    while (y<giocate1.size()){
+                        if(giocate1.get(y).equals(2)){
+                            int k=y+1;
+                            while (k<giocate1.size()){
+                                if(giocate1.get(k).equals(3)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n2 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        if(giocate1.get(y).equals(4)){
+                            int k=y+1;
+                            while (k<giocate1.size()){
+                                if(giocate1.get(k).equals(7)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n2 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        if(giocate1.get(y).equals(5)){
+                            int k=y+1;
+                            while (k<giocate1.size()){
+                                if(giocate1.get(k).equals(9)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n2 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        y++;
+                    }
                     conta++;
                 }
             }
@@ -81,12 +223,110 @@ public class Partita  extends AppCompatActivity {
                     b2.setClickable(false);
                     tv3.setText(n2);
                     giocate1.add(2);
+                    Collections.sort(giocate1);
+                    int y=0;
+                    while (y<giocate1.size()){
+                        if(giocate1.get(y).equals(1)){
+                            int k=y+1;
+                            while (k<giocate1.size()){
+                                if(giocate1.get(k).equals(3)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n1 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        if(giocate1.get(y).equals(5)){
+                            int k=y+1;
+                            while (k<giocate1.size()){
+                                if(giocate1.get(k).equals(8)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n1 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        y++;
+                    }
                     conta++;
                 } else {
                     b2.setBackground(getDrawable(R.drawable.cerchio));
                     b2.setClickable(false);
-                    tv3.setText(n1);
+                    tv3.setText(n2);
                     giocate2.add(2);
+                    Collections.sort(giocate2);
+                    int y=0;
+                    while (y<giocate2.size()){
+                        if(giocate2.get(y).equals(1)){
+                            int k=y+1;
+                            while (k<giocate2.size()){
+                                if(giocate2.get(k).equals(3)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n2 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        if(giocate2.get(y).equals(5)){
+                            int k=y+1;
+                            while (k<giocate2.size()){
+                                if(giocate2.get(k).equals(8)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n2 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        y++;
+                    }
                     conta++;
                 }
             }
@@ -99,12 +339,154 @@ public class Partita  extends AppCompatActivity {
                     b3.setClickable(false);
                     tv3.setText(n2);
                     giocate1.add(3);
+                    Collections.sort(giocate1);
+                    int y=0;
+                    while (y<giocate1.size()){
+                        if(giocate1.get(y).equals(1)){
+                            int k=y+1;
+                            while (k<giocate1.size()){
+                                if(giocate1.get(k).equals(2)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n1 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        if(giocate1.get(y).equals(6)){
+                            int k=y+1;
+                            while (k<giocate1.size()){
+                                if(giocate1.get(k).equals(9)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n1 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        if(giocate1.get(y).equals(5)){
+                            int k=y+1;
+                            while (k<giocate1.size()){
+                                if(giocate1.get(k).equals(7)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n1 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        y++;
+                    }
                     conta++;
                 } else {
                     b3.setBackground(getDrawable(R.drawable.cerchio));
                     b3.setClickable(false);
                     tv3.setText(n1);
                     giocate2.add(3);
+                    Collections.sort(giocate2);
+                    int y=0;
+                    while (y<giocate2.size()){
+                        if(giocate2.get(y).equals(1)){
+                            int k=y+1;
+                            while (k<giocate2.size()){
+                                if(giocate2.get(k).equals(2)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n2 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        if(giocate2.get(y).equals(6)){
+                            int k=y+1;
+                            while (k<giocate2.size()){
+                                if(giocate2.get(k).equals(9)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n2 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        if(giocate2.get(y).equals(5)){
+                            int k=y+1;
+                            while (k<giocate2.size()){
+                                if(giocate2.get(k).equals(7)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n2 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        y++;
+                    }
                     conta++;
                 }
             }
@@ -117,12 +499,110 @@ public class Partita  extends AppCompatActivity {
                     b4.setClickable(false);
                     tv3.setText(n2);
                     giocate1.add(4);
+                    Collections.sort(giocate1);
+                    int y=0;
+                    while (y<giocate1.size()){
+                        if(giocate1.get(y).equals(1)){
+                            int k=y+1;
+                            while (k<giocate1.size()){
+                                if(giocate1.get(k).equals(7)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n1 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        if(giocate1.get(y).equals(5)){
+                            int k=y+1;
+                            while (k<giocate1.size()){
+                                if(giocate1.get(k).equals(6)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n1 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        y++;
+                    }
                     conta++;
                 } else {
                     b4.setBackground(getDrawable(R.drawable.cerchio));
                     b4.setClickable(false);
                     tv3.setText(n1);
                     giocate2.add(4);
+                    Collections.sort(giocate2);
+                    int y=0;
+                    while (y<giocate2.size()){
+                        if(giocate2.get(y).equals(1)){
+                            int k=y+1;
+                            while (k<giocate2.size()){
+                                if(giocate2.get(k).equals(7)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n2 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        if(giocate2.get(y).equals(5)){
+                            int k=y+1;
+                            while (k<giocate2.size()){
+                                if(giocate2.get(k).equals(6)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n2 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        y++;
+                    }
                     conta++;
                 }
             }
@@ -135,12 +615,198 @@ public class Partita  extends AppCompatActivity {
                     b5.setClickable(false);
                     tv3.setText(n2);
                     giocate1.add(5);
+                    Collections.sort(giocate1);
+                    int y=0;
+                    while (y<giocate1.size()){
+                        if(giocate1.get(y).equals(2)){
+                            int k=y+1;
+                            while (k<giocate1.size()){
+                                if(giocate1.get(k).equals(8)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n1 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        if(giocate1.get(y).equals(4)){
+                            int k=y+1;
+                            while (k<giocate1.size()){
+                                if(giocate1.get(k).equals(6)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n1 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        if(giocate1.get(y).equals(1)){
+                            int k=y+1;
+                            while (k<giocate1.size()){
+                                if(giocate1.get(k).equals(9)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n1 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        if(giocate1.get(y).equals(3)){
+                            int k=y+1;
+                            while (k<giocate1.size()){
+                                if(giocate1.get(k).equals(7)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n1 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        y++;
+                    }
                     conta++;
                 } else {
                     b5.setBackground(getDrawable(R.drawable.cerchio));
                     b5.setClickable(false);
                     tv3.setText(n1);
                     giocate2.add(5);
+                    Collections.sort(giocate2);
+                    int y=0;
+                    while (y<giocate2.size()){
+                        if(giocate2.get(y).equals(2)){
+                            int k=y+1;
+                            while (k<giocate2.size()){
+                                if(giocate2.get(k).equals(8)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n2 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        if(giocate2.get(y).equals(4)){
+                            int k=y+1;
+                            while (k<giocate2.size()){
+                                if(giocate2.get(k).equals(6)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n2 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        if(giocate2.get(y).equals(1)){
+                            int k=y+1;
+                            while (k<giocate2.size()){
+                                if(giocate2.get(k).equals(9)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n2 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        if(giocate2.get(y).equals(3)){
+                            int k=y+1;
+                            while (k<giocate2.size()){
+                                if(giocate2.get(k).equals(7)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n2 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        y++;
+                    }
                     conta++;
                 }
             }
@@ -153,12 +819,110 @@ public class Partita  extends AppCompatActivity {
                     b6.setClickable(false);
                     tv3.setText(n2);
                     giocate1.add(6);
+                    Collections.sort(giocate1);
+                    int y=0;
+                    while (y<giocate1.size()){
+                        if(giocate1.get(y).equals(3)){
+                            int k=y+1;
+                            while (k<giocate1.size()){
+                                if(giocate1.get(k).equals(9)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n1 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        if(giocate1.get(y).equals(4)){
+                            int k=y+1;
+                            while (k<giocate1.size()){
+                                if(giocate1.get(k).equals(5)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n1 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        y++;
+                    }
                     conta++;
                 } else {
                     b6.setBackground(getDrawable(R.drawable.cerchio));
                     b6.setClickable(false);
                     tv3.setText(n1);
                     giocate2.add(6);
+                    Collections.sort(giocate2);
+                    int y=0;
+                    while (y<giocate2.size()){
+                        if(giocate2.get(y).equals(3)){
+                            int k=y+1;
+                            while (k<giocate2.size()){
+                                if(giocate2.get(k).equals(9)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n2 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        if(giocate2.get(y).equals(4)){
+                            int k=y+1;
+                            while (k<giocate2.size()){
+                                if(giocate2.get(k).equals(5)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n2 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        y++;
+                    }
                     conta++;
                 }
             }
@@ -171,12 +935,154 @@ public class Partita  extends AppCompatActivity {
                     b7.setClickable(false);
                     tv3.setText(n2);
                     giocate1.add(7);
+                    Collections.sort(giocate1);
+                    int y=0;
+                    while (y<giocate1.size()){
+                        if(giocate1.get(y).equals(1)){
+                            int k=y+1;
+                            while (k<giocate1.size()){
+                                if(giocate1.get(k).equals(4)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n1 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        if(giocate1.get(y).equals(3)){
+                            int k=y+1;
+                            while (k<giocate1.size()){
+                                if(giocate1.get(k).equals(5)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n1 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        if(giocate1.get(y).equals(8)){
+                            int k=y+1;
+                            while (k<giocate1.size()){
+                                if(giocate1.get(k).equals(9)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n1 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        y++;
+                    }
                     conta++;
                 } else {
                     b7.setBackground(getDrawable(R.drawable.cerchio));
                     b7.setClickable(false);
                     tv3.setText(n1);
                     giocate2.add(7);
+                    Collections.sort(giocate2);
+                    int y=0;
+                    while (y<giocate2.size()){
+                        if(giocate2.get(y).equals(1)){
+                            int k=y+1;
+                            while (k<giocate2.size()){
+                                if(giocate2.get(k).equals(4)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n2 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        if(giocate2.get(y).equals(3)){
+                            int k=y+1;
+                            while (k<giocate2.size()){
+                                if(giocate2.get(k).equals(5)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n2 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        if(giocate2.get(y).equals(8)){
+                            int k=y+1;
+                            while (k<giocate2.size()){
+                                if(giocate2.get(k).equals(9)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n2 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        y++;
+                    }
                     conta++;
                 }
             }
@@ -189,12 +1095,110 @@ public class Partita  extends AppCompatActivity {
                     b8.setClickable(false);
                     tv3.setText(n2);
                     giocate1.add(8);
+                    Collections.sort(giocate1);
+                    int y=0;
+                    while (y<giocate1.size()){
+                        if(giocate1.get(y).equals(2)){
+                            int k=y+1;
+                            while (k<giocate1.size()){
+                                if(giocate1.get(k).equals(5)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n1 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        if(giocate1.get(y).equals(7)){
+                            int k=y+1;
+                            while (k<giocate1.size()){
+                                if(giocate1.get(k).equals(9)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n1 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        y++;
+                    }
                     conta++;
                 } else {
                     b8.setBackground(getDrawable(R.drawable.cerchio));
                     b8.setClickable(false);
                     tv3.setText(n1);
                     giocate2.add(8);
+                    Collections.sort(giocate2);
+                    int y=0;
+                    while (y<giocate2.size()){
+                        if(giocate2.get(y).equals(2)){
+                            int k=y+1;
+                            while (k<giocate2.size()){
+                                if(giocate2.get(k).equals(5)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n2 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        if(giocate2.get(y).equals(7)){
+                            int k=y+1;
+                            while (k<giocate2.size()){
+                                if(giocate2.get(k).equals(9)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n2 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        y++;
+                    }
                     conta++;
                 }
             }
@@ -207,12 +1211,154 @@ public class Partita  extends AppCompatActivity {
                     b9.setClickable(false);
                     tv3.setText(n2);
                     giocate1.add(9);
+                    Collections.sort(giocate1);
+                    int y=0;
+                    while (y<giocate1.size()){
+                        if(giocate1.get(y).equals(1)){
+                            int k=y+1;
+                            while (k<giocate1.size()){
+                                if(giocate1.get(k).equals(5)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n1 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        if(giocate1.get(y).equals(3)){
+                            int k=y+1;
+                            while (k<giocate1.size()){
+                                if(giocate1.get(k).equals(6)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n1 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        if(giocate1.get(y).equals(7)){
+                            int k=y+1;
+                            while (k<giocate1.size()){
+                                if(giocate1.get(k).equals(8)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n1 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        y++;
+                    }
                     conta++;
                 } else {
                     b9.setBackground(getDrawable(R.drawable.cerchio));
                     b9.setClickable(false);
                     tv3.setText(n1);
                     giocate2.add(9);
+                    Collections.sort(giocate2);
+                    int y=0;
+                    while (y<giocate2.size()){
+                        if(giocate2.get(y).equals(1)){
+                            int k=y+1;
+                            while (k<giocate2.size()){
+                                if(giocate2.get(k).equals(5)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n2 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        if(giocate2.get(y).equals(3)){
+                            int k=y+1;
+                            while (k<giocate2.size()){
+                                if(giocate2.get(k).equals(6)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n2 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        if(giocate2.get(y).equals(7)){
+                            int k=y+1;
+                            while (k<giocate2.size()){
+                                if(giocate2.get(k).equals(8)){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                                    builder.setTitle("Partita terminata");
+
+                                    builder.setMessage(n2 + " hai vinto!")
+                                            .setCancelable(false)
+                                            .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    // TODO: handle the OK
+                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
+                                                    startActivity(fine);
+                                                }
+                                            });
+                                    AlertDialog alertDialog = builder.create();
+                                    alertDialog.show();
+                                }
+                                k++;
+                            }
+                        }
+                        y++;
+                    }
                     conta++;
                 }
             }
