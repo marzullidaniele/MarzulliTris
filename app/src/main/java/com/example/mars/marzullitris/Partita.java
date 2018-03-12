@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Random;
 
 public class Partita  extends AppCompatActivity {
     TextView tv1;
@@ -31,6 +32,8 @@ public class Partita  extends AppCompatActivity {
     int conta=0;
     String n1;
     String n2;
+    String primo;
+    String secondo;
     ArrayList giocate1=new ArrayList();
     ArrayList giocate2=new ArrayList();
     @Override
@@ -41,11 +44,21 @@ public class Partita  extends AppCompatActivity {
         n1=nomi.getString("n1");
         n2 =nomi.getString("n2");
         tv1=findViewById(R.id.textView5);
-        tv1.setText(n1 + "->");
         tv2=findViewById(R.id.textView6);
-        tv2.setText(n2 + "->");
         tv3=findViewById(R.id.textView10);
-        tv3.setText(n1);
+        Random r = new Random();
+        int rand=r.nextInt(3 - 1) + 1;
+        if(rand==1){
+            primo=n1;
+            secondo=n2;
+        }
+        else{
+            primo=n2;
+            secondo=n1;
+        }
+        tv3.setText(primo);
+        tv1.setText(primo + "->");
+        tv2.setText(secondo + "->");
         b1=findViewById(R.id.imageButton);
         b2=findViewById(R.id.imageButton1);
         b3=findViewById(R.id.imageButton2);
@@ -61,7 +74,7 @@ public class Partita  extends AppCompatActivity {
                 if (conta % 2 == 0) {
                     b1.setBackground(getDrawable(R.drawable.x));
                     b1.setClickable(false);
-                    tv3.setText(n2);
+                    tv3.setText(secondo);
                     giocate1.add(1);
                     Collections.sort(giocate1);
                     int y=0;
@@ -73,7 +86,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n1 + " hai vinto!")
+                                    builder.setMessage(primo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -101,7 +114,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n1 + " hai vinto!")
+                                    builder.setMessage(primo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -129,7 +142,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n1 + " hai vinto!")
+                                    builder.setMessage(primo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -178,7 +191,7 @@ public class Partita  extends AppCompatActivity {
                 } else {
                     b1.setBackground(getDrawable(R.drawable.cerchio));
                     b1.setClickable(false);
-                    tv3.setText(n1);
+                    tv3.setText(primo);
                     giocate2.add(1);
                     Collections.sort(giocate2);
                     int y=0;
@@ -190,7 +203,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n2 + " hai vinto!")
+                                    builder.setMessage(secondo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -218,7 +231,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n2 + " hai vinto!")
+                                    builder.setMessage(secondo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -246,7 +259,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n2 + " hai vinto!")
+                                    builder.setMessage(secondo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -279,7 +292,7 @@ public class Partita  extends AppCompatActivity {
                 if (conta % 2 == 0) {
                     b2.setBackground(getDrawable(R.drawable.x));
                     b2.setClickable(false);
-                    tv3.setText(n2);
+                    tv3.setText(secondo);
                     giocate1.add(2);
                     Collections.sort(giocate1);
                     int y=0;
@@ -291,7 +304,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n1 + " hai vinto!")
+                                    builder.setMessage(primo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -319,7 +332,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n1 + " hai vinto!")
+                                    builder.setMessage(primo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -368,7 +381,7 @@ public class Partita  extends AppCompatActivity {
                 } else {
                     b2.setBackground(getDrawable(R.drawable.cerchio));
                     b2.setClickable(false);
-                    tv3.setText(n2);
+                    tv3.setText(primo);
                     giocate2.add(2);
                     Collections.sort(giocate2);
                     int y=0;
@@ -380,7 +393,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n2 + " hai vinto!")
+                                    builder.setMessage(secondo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -408,7 +421,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n2 + " hai vinto!")
+                                    builder.setMessage(secondo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -441,7 +454,7 @@ public class Partita  extends AppCompatActivity {
                 if (conta % 2 == 0) {
                     b3.setBackground(getDrawable(R.drawable.x));
                     b3.setClickable(false);
-                    tv3.setText(n2);
+                    tv3.setText(secondo);
                     giocate1.add(3);
                     Collections.sort(giocate1);
                     int y=0;
@@ -453,7 +466,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n1 + " hai vinto!")
+                                    builder.setMessage(primo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -481,7 +494,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n1 + " hai vinto!")
+                                    builder.setMessage(primo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -509,7 +522,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n1 + " hai vinto!")
+                                    builder.setMessage(primo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -558,7 +571,7 @@ public class Partita  extends AppCompatActivity {
                 } else {
                     b3.setBackground(getDrawable(R.drawable.cerchio));
                     b3.setClickable(false);
-                    tv3.setText(n1);
+                    tv3.setText(primo);
                     giocate2.add(3);
                     Collections.sort(giocate2);
                     int y=0;
@@ -570,7 +583,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n2 + " hai vinto!")
+                                    builder.setMessage(secondo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -598,7 +611,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n2 + " hai vinto!")
+                                    builder.setMessage(secondo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -626,7 +639,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n2 + " hai vinto!")
+                                    builder.setMessage(secondo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -659,7 +672,7 @@ public class Partita  extends AppCompatActivity {
                 if (conta % 2 == 0) {
                     b4.setBackground(getDrawable(R.drawable.x));
                     b4.setClickable(false);
-                    tv3.setText(n2);
+                    tv3.setText(secondo);
                     giocate1.add(4);
                     Collections.sort(giocate1);
                     int y=0;
@@ -671,7 +684,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n1 + " hai vinto!")
+                                    builder.setMessage(primo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -699,7 +712,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n1 + " hai vinto!")
+                                    builder.setMessage(primo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -748,7 +761,7 @@ public class Partita  extends AppCompatActivity {
                 } else {
                     b4.setBackground(getDrawable(R.drawable.cerchio));
                     b4.setClickable(false);
-                    tv3.setText(n1);
+                    tv3.setText(primo);
                     giocate2.add(4);
                     Collections.sort(giocate2);
                     int y=0;
@@ -760,7 +773,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n2 + " hai vinto!")
+                                    builder.setMessage(secondo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -788,7 +801,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n2 + " hai vinto!")
+                                    builder.setMessage(secondo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -821,7 +834,7 @@ public class Partita  extends AppCompatActivity {
                 if (conta % 2 == 0) {
                     b5.setBackground(getDrawable(R.drawable.x));
                     b5.setClickable(false);
-                    tv3.setText(n2);
+                    tv3.setText(secondo);
                     giocate1.add(5);
                     Collections.sort(giocate1);
                     int y=0;
@@ -833,7 +846,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n1 + " hai vinto!")
+                                    builder.setMessage(primo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -861,7 +874,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n1 + " hai vinto!")
+                                    builder.setMessage(primo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -889,7 +902,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n1 + " hai vinto!")
+                                    builder.setMessage(primo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -917,7 +930,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n1 + " hai vinto!")
+                                    builder.setMessage(primo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -966,7 +979,7 @@ public class Partita  extends AppCompatActivity {
                 } else {
                     b5.setBackground(getDrawable(R.drawable.cerchio));
                     b5.setClickable(false);
-                    tv3.setText(n1);
+                    tv3.setText(primo);
                     giocate2.add(5);
                     Collections.sort(giocate2);
                     int y=0;
@@ -978,7 +991,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n2 + " hai vinto!")
+                                    builder.setMessage(secondo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -1006,7 +1019,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n2 + " hai vinto!")
+                                    builder.setMessage(secondo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -1034,7 +1047,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n2 + " hai vinto!")
+                                    builder.setMessage(secondo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -1062,7 +1075,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n2 + " hai vinto!")
+                                    builder.setMessage(secondo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -1095,7 +1108,7 @@ public class Partita  extends AppCompatActivity {
                 if (conta % 2 == 0) {
                     b6.setBackground(getDrawable(R.drawable.x));
                     b6.setClickable(false);
-                    tv3.setText(n2);
+                    tv3.setText(secondo);
                     giocate1.add(6);
                     Collections.sort(giocate1);
                     int y=0;
@@ -1107,7 +1120,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n1 + " hai vinto!")
+                                    builder.setMessage(primo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -1135,7 +1148,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n1 + " hai vinto!")
+                                    builder.setMessage(primo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -1184,7 +1197,7 @@ public class Partita  extends AppCompatActivity {
                 } else {
                     b6.setBackground(getDrawable(R.drawable.cerchio));
                     b6.setClickable(false);
-                    tv3.setText(n1);
+                    tv3.setText(primo);
                     giocate2.add(6);
                     Collections.sort(giocate2);
                     int y=0;
@@ -1196,7 +1209,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n2 + " hai vinto!")
+                                    builder.setMessage(secondo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -1224,7 +1237,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n2 + " hai vinto!")
+                                    builder.setMessage(secondo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -1257,7 +1270,7 @@ public class Partita  extends AppCompatActivity {
                 if (conta % 2 == 0) {
                     b7.setBackground(getDrawable(R.drawable.x));
                     b7.setClickable(false);
-                    tv3.setText(n2);
+                    tv3.setText(secondo);
                     giocate1.add(7);
                     Collections.sort(giocate1);
                     int y=0;
@@ -1269,7 +1282,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n1 + " hai vinto!")
+                                    builder.setMessage(primo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -1297,7 +1310,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n1 + " hai vinto!")
+                                    builder.setMessage(primo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -1325,7 +1338,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n1 + " hai vinto!")
+                                    builder.setMessage(primo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -1374,7 +1387,7 @@ public class Partita  extends AppCompatActivity {
                 } else {
                     b7.setBackground(getDrawable(R.drawable.cerchio));
                     b7.setClickable(false);
-                    tv3.setText(n1);
+                    tv3.setText(primo);
                     giocate2.add(7);
                     Collections.sort(giocate2);
                     int y=0;
@@ -1386,7 +1399,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n2 + " hai vinto!")
+                                    builder.setMessage(secondo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -1414,7 +1427,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n2 + " hai vinto!")
+                                    builder.setMessage(secondo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -1442,7 +1455,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n2 + " hai vinto!")
+                                    builder.setMessage(secondo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -1475,7 +1488,7 @@ public class Partita  extends AppCompatActivity {
                 if (conta % 2 == 0) {
                     b8.setBackground(getDrawable(R.drawable.x));
                     b8.setClickable(false);
-                    tv3.setText(n2);
+                    tv3.setText(secondo);
                     giocate1.add(8);
                     Collections.sort(giocate1);
                     int y=0;
@@ -1487,7 +1500,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n1 + " hai vinto!")
+                                    builder.setMessage(primo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -1515,7 +1528,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n1 + " hai vinto!")
+                                    builder.setMessage(primo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -1564,7 +1577,7 @@ public class Partita  extends AppCompatActivity {
                 } else {
                     b8.setBackground(getDrawable(R.drawable.cerchio));
                     b8.setClickable(false);
-                    tv3.setText(n1);
+                    tv3.setText(primo);
                     giocate2.add(8);
                     Collections.sort(giocate2);
                     int y=0;
@@ -1576,7 +1589,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n2 + " hai vinto!")
+                                    builder.setMessage(secondo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -1604,7 +1617,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n2 + " hai vinto!")
+                                    builder.setMessage(secondo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -1637,7 +1650,7 @@ public class Partita  extends AppCompatActivity {
                 if (conta % 2 == 0) {
                     b9.setBackground(getDrawable(R.drawable.x));
                     b9.setClickable(false);
-                    tv3.setText(n2);
+                    tv3.setText(secondo);
                     giocate1.add(9);
                     Collections.sort(giocate1);
                     int y=0;
@@ -1649,7 +1662,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n1 + " hai vinto!")
+                                    builder.setMessage(primo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -1677,7 +1690,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n1 + " hai vinto!")
+                                    builder.setMessage(primo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -1705,7 +1718,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n1 + " hai vinto!")
+                                    builder.setMessage(primo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -1754,7 +1767,7 @@ public class Partita  extends AppCompatActivity {
                 } else {
                     b9.setBackground(getDrawable(R.drawable.cerchio));
                     b9.setClickable(false);
-                    tv3.setText(n1);
+                    tv3.setText(primo);
                     giocate2.add(9);
                     Collections.sort(giocate2);
                     int y=0;
@@ -1766,7 +1779,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n2 + " hai vinto!")
+                                    builder.setMessage(secondo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -1794,7 +1807,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n2 + " hai vinto!")
+                                    builder.setMessage(secondo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -1822,7 +1835,7 @@ public class Partita  extends AppCompatActivity {
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
-                                    builder.setMessage(n2 + " hai vinto!")
+                                    builder.setMessage(secondo + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
