@@ -76,12 +76,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n1 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -98,12 +104,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n1 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -120,12 +132,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n1 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -133,6 +151,28 @@ public class Partita  extends AppCompatActivity {
                             }
                         }
                         y++;
+                    }
+                    if(giocate1.size()>4){
+                        AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                        builder.setTitle("Partita terminata");
+
+                        builder.setMessage("Pareggio!")
+                                .setCancelable(false)
+                                .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                            public void onClick(DialogInterface dialog, int which) {
+                                                Intent fine = getIntent();
+                                                startActivity(fine);
+                                            }
+                                });
+                        AlertDialog alertDialog = builder.create();
+                        alertDialog.show();
                     }
                     conta++;
                 } else {
@@ -153,12 +193,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n2 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -175,12 +221,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n2 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -197,12 +249,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n2 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -236,12 +294,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n1 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -258,12 +322,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n1 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -271,6 +341,28 @@ public class Partita  extends AppCompatActivity {
                             }
                         }
                         y++;
+                    }
+                    if(giocate1.size()>4){
+                        AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                        builder.setTitle("Partita terminata");
+
+                        builder.setMessage("Pareggio!")
+                                .setCancelable(false)
+                                .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
+                        AlertDialog alertDialog = builder.create();
+                        alertDialog.show();
                     }
                     conta++;
                 } else {
@@ -291,12 +383,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n2 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -313,12 +411,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n2 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -352,12 +456,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n1 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -374,12 +484,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n1 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -396,12 +512,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n1 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -409,6 +531,28 @@ public class Partita  extends AppCompatActivity {
                             }
                         }
                         y++;
+                    }
+                    if(giocate1.size()>4){
+                        AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                        builder.setTitle("Partita terminata");
+
+                        builder.setMessage("Pareggio!")
+                                .setCancelable(false)
+                                .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
+                        AlertDialog alertDialog = builder.create();
+                        alertDialog.show();
                     }
                     conta++;
                 } else {
@@ -429,12 +573,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n2 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -451,12 +601,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n2 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -473,12 +629,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n2 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -512,12 +674,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n1 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -534,12 +702,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n1 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -547,6 +721,28 @@ public class Partita  extends AppCompatActivity {
                             }
                         }
                         y++;
+                    }
+                    if(giocate1.size()>4){
+                        AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                        builder.setTitle("Partita terminata");
+
+                        builder.setMessage("Pareggio!")
+                                .setCancelable(false)
+                                .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
+                        AlertDialog alertDialog = builder.create();
+                        alertDialog.show();
                     }
                     conta++;
                 } else {
@@ -567,12 +763,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n2 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -589,12 +791,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n2 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -628,12 +836,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n1 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -650,12 +864,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n1 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -672,12 +892,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n1 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -694,12 +920,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n1 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -707,6 +939,28 @@ public class Partita  extends AppCompatActivity {
                             }
                         }
                         y++;
+                    }
+                    if(giocate1.size()>4){
+                        AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                        builder.setTitle("Partita terminata");
+
+                        builder.setMessage("Pareggio!")
+                                .setCancelable(false)
+                                .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
+                        AlertDialog alertDialog = builder.create();
+                        alertDialog.show();
                     }
                     conta++;
                 } else {
@@ -727,12 +981,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n2 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -749,12 +1009,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n2 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -771,12 +1037,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n2 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -793,12 +1065,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n2 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -832,12 +1110,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n1 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -854,12 +1138,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n1 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -867,6 +1157,28 @@ public class Partita  extends AppCompatActivity {
                             }
                         }
                         y++;
+                    }
+                    if(giocate1.size()>4){
+                        AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                        builder.setTitle("Partita terminata");
+
+                        builder.setMessage("Pareggio!")
+                                .setCancelable(false)
+                                .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
+                        AlertDialog alertDialog = builder.create();
+                        alertDialog.show();
                     }
                     conta++;
                 } else {
@@ -887,12 +1199,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n2 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -909,12 +1227,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n2 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -948,12 +1272,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n1 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -970,12 +1300,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n1 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -992,12 +1328,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n1 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -1005,6 +1347,28 @@ public class Partita  extends AppCompatActivity {
                             }
                         }
                         y++;
+                    }
+                    if(giocate1.size()>4){
+                        AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                        builder.setTitle("Partita terminata");
+
+                        builder.setMessage("Pareggio!")
+                                .setCancelable(false)
+                                .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
+                        AlertDialog alertDialog = builder.create();
+                        alertDialog.show();
                     }
                     conta++;
                 } else {
@@ -1025,12 +1389,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n2 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -1047,12 +1417,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n2 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -1069,12 +1445,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n2 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -1108,12 +1490,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n1 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -1130,12 +1518,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n1 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -1143,6 +1537,28 @@ public class Partita  extends AppCompatActivity {
                             }
                         }
                         y++;
+                    }
+                    if(giocate1.size()>4){
+                        AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                        builder.setTitle("Partita terminata");
+
+                        builder.setMessage("Pareggio!")
+                                .setCancelable(false)
+                                .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
+                        AlertDialog alertDialog = builder.create();
+                        alertDialog.show();
                     }
                     conta++;
                 } else {
@@ -1163,12 +1579,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n2 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -1185,12 +1607,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n2 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -1224,12 +1652,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n1 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -1246,12 +1680,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n1 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -1268,12 +1708,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n1 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -1281,6 +1727,28 @@ public class Partita  extends AppCompatActivity {
                             }
                         }
                         y++;
+                    }
+                    if(giocate1.size()>4){
+                        AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
+                        builder.setTitle("Partita terminata");
+
+                        builder.setMessage("Pareggio!")
+                                .setCancelable(false)
+                                .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
+                        AlertDialog alertDialog = builder.create();
+                        alertDialog.show();
                     }
                     conta++;
                 } else {
@@ -1301,12 +1769,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n2 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -1323,12 +1797,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n2 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
@@ -1345,12 +1825,18 @@ public class Partita  extends AppCompatActivity {
                                     builder.setMessage(n2 + " hai vinto!")
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int id) {
-                                                    // TODO: handle the OK
-                                                    Intent fine = new Intent(Partita.this, MainActivity.class);
-                                                    startActivity(fine);
-                                                }
-                                            });
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // TODO: handle the OK
+                                        Intent fine = new Intent(Partita.this, MainActivity.class);
+                                        startActivity(fine);
+                                    }
+                                })
+                                .setNegativeButton("Ricomincia partita", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent fine = getIntent();
+                                        startActivity(fine);
+                                    }
+                                });
                                     AlertDialog alertDialog = builder.create();
                                     alertDialog.show();
                                 }
