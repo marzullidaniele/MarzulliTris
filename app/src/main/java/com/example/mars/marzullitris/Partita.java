@@ -180,13 +180,13 @@ public class Partita  extends AppCompatActivity {
                     b1.setClickable(false);
                     tv3.setText(n1);
                     giocate2.add(1);
-                    Collections.sort(giocate1);
+                    Collections.sort(giocate2);
                     int y=0;
-                    while (y<giocate1.size()){
-                        if(giocate1.get(y).equals(2)){
+                    while (y<giocate2.size()){
+                        if(giocate2.get(y).equals(2)){
                             int k=y+1;
-                            while (k<giocate1.size()){
-                                if(giocate1.get(k).equals(3)){
+                            while (k<giocate2.size()){
+                                if(giocate2.get(k).equals(3)){
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
@@ -211,10 +211,10 @@ public class Partita  extends AppCompatActivity {
                                 k++;
                             }
                         }
-                        if(giocate1.get(y).equals(4)){
+                        if(giocate2.get(y).equals(4)){
                             int k=y+1;
-                            while (k<giocate1.size()){
-                                if(giocate1.get(k).equals(7)){
+                            while (k<giocate2.size()){
+                                if(giocate2.get(k).equals(7)){
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
@@ -239,10 +239,10 @@ public class Partita  extends AppCompatActivity {
                                 k++;
                             }
                         }
-                        if(giocate1.get(y).equals(5)){
+                        if(giocate2.get(y).equals(5)){
                             int k=y+1;
-                            while (k<giocate1.size()){
-                                if(giocate1.get(k).equals(9)){
+                            while (k<giocate2.size()){
+                                if(giocate2.get(k).equals(9)){
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
                                     builder.setTitle("Partita terminata");
 
