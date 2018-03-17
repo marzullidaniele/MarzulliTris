@@ -84,9 +84,9 @@ public class Partita  extends AppCompatActivity {
                             while (k<giocate1.size()){
                                 if(giocate1.get(k).equals(3)){
                                     AlertDialog.Builder builder = new AlertDialog.Builder(Partita.this);
-                                    builder.setTitle("Partita terminata");
+                                    builder.setTitle(R.string.partita_terminata);
 
-                                    builder.setMessage(primo + " hai vinto!")
+                                    builder.setMessage(primo + getString(R.string.vinto))
                                             .setCancelable(false)
                                             .setPositiveButton("Torna al menù iniziale", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
