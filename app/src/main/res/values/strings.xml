@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Marzulli\'s Tris</string>
     <string name="_1_contro_1">GIOCA</string>
-    <string name="selezionare_modalita_di_gioco">PRODUCED AND DESIGNED BY DANIELE MARZULLI</string>
+    <string name="selezionare_modalita_di_gioco">QUESTO E\' IL GIOCO DI DANIELE MARZULLI</string>
     <string name="partita_terminata">Partita terminata</string>
     <string name="vinto">hai vinto!</string>
 </resources>
